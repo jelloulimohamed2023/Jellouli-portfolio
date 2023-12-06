@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(13, 13, 40);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin: 20px 50px;
+}
+
+nav ul a li {
+    display: inline-flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 45px;
+    transition: 0.4s;
+    padding: 5px;
+
+}
+
+nav ul a li:hover {
+    background-color: rgb(6, 6, 116);
+    border-radius: 7px;
+    transform: scale(1.5);
+
+}
+
+.logo {
+    margin: 1px 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    font-size: 50px;
+}
+
+main {
+    margin-left: 150px;
+    margin-top: 130px;
+}
+
+p {
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+p span {
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.front-end {
+    color: aqua;
+    font-size: 35px;
+}
+
+.front-end .developer {
+    color: rgb(88, 52, 232);
+}
+
+.lorem {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+div:empty {
+    background-color: rgb(101, 43, 155);
+    width: 350px;
+    height: 320px;
+    position: absolute;
+    left: 805px;
+    bottom: 180px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+}
+
+.my-img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 820px;
+    bottom: 150px;
+    border-radius: 50%;
+    animation-name: me;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes me {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cv {
+    margin-top: 40px;
+    background-color: #0000ff;
+    width: 100px;
+    height: 30px;
+    color: #339f9f;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.cv:hover {
+    transform: scale(1.3);
+}
